@@ -7,8 +7,9 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f7fb;
+    color: #333; /* Changed back to dark for light background */
+    background-color: #f4f7fb; /* Light background for the website */
+    border: 5px solid #125740; /* Jets green border around the website */
 }
 
 header {
@@ -75,10 +76,22 @@ header {
 .tab-content {
     display: none;
     animation: fadeIn 0.4s ease-in;
+    padding: 40px 20px;
+    border-radius: 8px;
 }
 
 .tab-content.active {
     display: block;
+}
+
+#home {
+    background-image: url('https://images.seattletimes.com/wp-content/uploads/2024/10/urnpublicidap.orga66582559ba732fdef53c299b38e39b6APTOPIX_Texans_Jets_Football_01784.jpg?d=780x520');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Ensure text is visible on the image */
+    padding: 40px 20px;
+    background-color: #125740; /* Jets green background for Home tab */
 }
 
 @keyframes fadeIn {
